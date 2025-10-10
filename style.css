@@ -349,7 +349,7 @@ h1, h2, h3, h4 {
 }
 
 .advisor-description {
-  flex: 2 1 620px;
+  flex: 2 1 420px;
   min-width: 360px;
 }
 
@@ -514,4 +514,11 @@ a:not(.nav-links a):not(.social-icon-link):not(.advisor-social-link):not(.person
 .nav-links a:hover, .nav-links a.active {
   background: #215031;
   color: #fff;
+}
+ul.custom-green-bullets {
+  padding-left: 2em;       /* Indents the bullet list to the right */
+  margin-left: 0;          /* Removes default left margin for consistency */
+}
+ul.custom-green-bullets li::marker {
+  color: #00693e; /* Dartmouth Green */
 }
