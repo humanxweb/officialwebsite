@@ -72,7 +72,6 @@ body {
   font-family: 'Roboto';
   background: #f7f8fa;
   min-height: 100vh;
-  padding-top: 72px; /* Space for header */
 }
 .main-content {
   max-width: 900px;
