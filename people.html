@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>People | Dartmouth HumanX Lab</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header class="header">
@@ -24,9 +26,10 @@
     <section class="advisor-section">
       <div class="advisor-description">
         <h2>Dr. Tam Vu</h2>
-        <h4>Principal Investigator</h4>
+        <h4>Thomas A. and Georgina Tugwell Russo 1977 Distinguished Professor, <br>Dartmouth College</h4>
         <p>
-            Tam Vu is the Thomas A. and Georgina Tugwell Russo 1977 Distinguished Professor in Computer Science at Dartmouth College and the Founder and Chairman of Earable Neuroscience. Prior to Dartmouth, Dr. Vu was an Associate Professor at Oxford University and the University of Colorado. 
+            Dr. Vu is the Founder and Chairman of Earable Neuroscience. Prior to Dartmouth, Dr. Vu was an Associate Professor at Oxford University and the University of Colorado. <br><br>
+            Dr. Vu is a pioneer in Earable Computing. He introduced the term "Earable Systems", describing ear-based sensing and stimulation computing systems. These systems use the ear's proximity to key physiological signals—such as brain activity, eye movements, and facial muscles—to capture data with high fidelity and low intrusion. This approach has influenced the technology industry, including companies like Apple and Google, in the development of advanced human-computer interaction and health monitoring tools. 
         </p>
       </div>
       <div class="advisor-photo-social">
@@ -49,27 +52,59 @@
     <div class="people-list">
       <div class="person">
         <a class="person-photo-link" href="https://ajwashahid.com/" target="_blank" aria-label="Ajwa Website">
-          <img src="assets/person-placeholder.png" alt="Ajwa Shahid" />
+          <img src="assets/ajwa.jpg" alt="Ajwa Shahid" />
         </a>
         <h3>Ajwa Shahid</h3>
-        <p>PhD Student<br>Social Robotics</p>
+        <p>
+            PhD Student<br>
+            <a href="mailto:rajnish.kumar@dartmouth.edu">Ajwa.Shahid.GR@dartmouth.edu</a> <br>
+            Machine Learning, Neuroscience, Human-Computer Interaction
+        </p>  
+        <button class="read-more-btn" type="button">Read More</button>
+        <div class="read-more-content">
+            Ajwa’s research explores sleep learning with non-invasive brain signal detection methods. She designs devices that improve human well-being.
+        </div>
       </div>
       <div class="person">
         <a class="person-photo-link" href="https://rajnish.com/" target="_blank" aria-label="Rajnish's Website">
           <img src="assets/person-placeholder.png" alt="Rajnish" />
         </a>
-        <h3>Rajnish</h3>
-        <p>Postdoctoral Fellow<br>Data Visualization</p>
-      </div>
+        <h3>Rajnish Kumar</h3>
+        <p>
+            Research Associate B<br>
+            <a href="mailto:rajnish.kumar@dartmouth.edu">rajnish.kumar@dartmouth.edu</a> <br>
+            Wearable Tech, AI Algorithms, Cognition
+        </p>  
+        <button class="read-more-btn" type="button">Read More</button>
+        <div class="read-more-content">
+            Rajnish’s research interests lie at the intersection of wearable technologies, AI algorithms, and the cognitive functions of the human brain. His work focuses on developing intelligent systems that quantify and enhance human focus, attention, and cognitive states in real time. By integrating multimodal sensor data, he aims to model the neural and physiological markers underlying different mental and cognitive processes. His research advances next-generation human–AI interaction, digital mental health, and adaptive learning technologies.
+        </div>  
+    </div>
       <div class="person">
-        <a class="person-photo-link" href="https://alicelee.com/" target="_blank" aria-label="Frank Website">
+        <a class="person-photo-link" href="https://personal.frank-s-chen.link/" target="_blank" aria-label="Frank Website">
           <img src="assets/person-placeholder.png" alt="Frank" />
         </a>
-        <h3>Frank Chen</h3>
-        <p>Postdoctoral Fellow<br>AI Ethics</p>
+        <h3>Frank (Sicong) Chen</h3>
+         <p>
+            Postdoctoral Researcher<br>
+            <a href="mailto:rajnish.kumar@dartmouth.edu">rajnish.kumar@dartmouth.edu</a> <br>
+            Multimodal Learning, Mobile Sensing
+        </p>
+        <button class="read-more-btn" type="button">Read More</button>
+        <div class="read-more-content">
+            Frank (Sicong) Chen is a postdoctoral researcher in Dartmouth College’s HumanX Cluster, working with Prof. Tam Vu. His research focuses on multimodal learning and continuous monitoring using wearable and mobile sensors to enhance health outcomes and user security. He has developed several frameworks for continuous authentication, emotion and stress recognition, and is currently developing intelligent, data-driven therapeutic systems that integrate wearable sensing with adaptive interventions to promote mental and physical well-being.        </div>
       </div>
       <!-- Add more people as needed -->
     </div>
   </main>
+  <script>
+    document.querySelectorAll('.read-more-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+        const content = btn.parentElement.querySelector('.read-more-content');
+        const isOpen = content.classList.toggle('open');
+        btn.textContent = isOpen ? "Hide" : "Read More";
+    });
+    });
+  </script>
 </body>
 </html>
